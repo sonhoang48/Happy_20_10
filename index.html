@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🌸 20/10 - Gửi Võ Nguyễn Ngọc Diệp 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="not-loaded">
+  <!-- Nhạc nền (bạn up file vào music/love.mp3) -->
+  <audio id="bg-music" loop>
+    <source src="music/love.mp3" type="audio/mpeg" />
+  </audio>
+
+    <!-- Nút phát / dừng nhạc -->
+  <div class="music-controls">
+    <button id="playPauseBtn">🎵 Phát / Dừng nhạc</button>
+  </div>
+
+  <!-- Hello Kitty nền mờ -->
+  <div class="kitty-background" aria-hidden="true">
+    <img src="https://i.pinimg.com/originals/b9/3a/f3/b93af35a6df9b5eaf2e2c22f7e09e95b.png" alt="" />
+  </div>
+  
+  <!-- Greeting -->
+  <div class="greeting">Chúc mừng 20/10, Anna Ngọc Diệp 🌸</div>
+
+  <!-- Sakura tree markup (gốc + thân/cành/leaf groups) -->
+  <div class="flowers" id="sakura-tree">
+    <div class="flower flower--1">
+      <div class="flower__leafs flower__leafs--1">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+
+        <div class="flower__light flower__light--1"></div>
+        <div class="flower__light flower__light--2"></div>
+        <div class="flower__light flower__light--3"></div>
+        <div class="flower__light flower__light--4"></div>
+        <div class="flower__light flower__light--5"></div>
+        <div class="flower__light flower__light--6"></div>
+        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--8"></div>
+      </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+        <div class="flower__line__leaf flower__line__leaf--5"></div>
+        <div class="flower__line__leaf flower__line__leaf--6"></div>
+      </div>
+    </div>
+
+    <div class="flower flower--2">
+      <div class="flower__leafs flower__leafs--2">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+
+        <div class="flower__light flower__light--1"></div>
+        <div class="flower__light flower__light--2"></div>
+        <div class="flower__light flower__light--3"></div>
+        <div class="flower__light flower__light--4"></div>
+        <div class="flower__light flower__light--5"></div>
+        <div class="flower__light flower__light--6"></div>
+        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--8"></div>
+      </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+      </div>
+    </div>
+
+    <div class="flower flower--3">
+      <div class="flower__leafs flower__leafs--3">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+
+        <div class="flower__light flower__light--1"></div>
+        <div class="flower__light flower__light--2"></div>
+        <div class="flower__light flower__light--3"></div>
+        <div class="flower__light flower__light--4"></div>
+        <div class="flower__light flower__light--5"></div>
+        <div class="flower__light flower__light--6"></div>
+        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--8"></div>
+      </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+      </div>
+    </div>
+
+    <!-- thân & cành/grass (bản gốc) -->
+    <div class="grow-ans" style="--d:1.2s">
+      <div class="flower__g-long">
+        <div class="flower__g-long__top"></div>
+        <div class="flower__g-long__bottom"></div>
+      </div>
+    </div>
+
+    <div class="growing-grass">
+      <div class="flower__grass flower__grass--1">
+        <div class="flower__grass--top"></div>
+        <div class="flower__grass--bottom"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+        <div class="flower__grass__overlay"></div>
+      </div>
+    </div>
+
+    <!-- Bạn có thể paste đầy đủ các block long-g...long-g--7 từ CSS gốc nếu muốn -->
+  </div>
+
+  <!-- Canvas overlay cho tim + petals rơi -->
+  <canvas id="effectsCanvas"></canvas>
+
+  <!-- Lời chúc hiện dần -->
+  <h1 id="typewriter" class="hidden"></h1>
+
+  <!-- Nút mở thiệp -->
+  <button id="openCardBtn" class="hidden">💌 Mở thiệp chúc mừng</button>
+
+  <!-- Popup thiệp -->
+  <div id="popupCard" class="popup">
+    <div class="card-content">
+      <h2>🌸 Chúc mừng 20/10 🌸</h2>
+      <p>Gửi đến cô gái đáng yêu, xinh đẹp và đặc biệt nhất – <strong>Võ Nguyễn Ngọc Diệp</strong> 💖</p>
+      <p>Chúc em luôn xinh đẹp, vui vẻ, học càng giỏi và yêu thương a nhìu hơn nhee! 💕</p>
+      <p>– Từ người luôn luôn yêu thương em - Thái Hoàng Sơn, đẹp zai top 1 server trái đất 😎</p>
+      <button id="closeCardBtn">Đóng thiệp</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -23,18 +23,22 @@ function tryPlayAudio() {
   }
 }
 
-// Nút Play / Pause
+// ==== Nút Play / Pause nhạc ====
+const playPauseBtn = document.getElementById("playPauseBtn");
+
 if (playPauseBtn && audio) {
-  playPauseBtn.addEventListener('click', () => {
+  playPauseBtn.addEventListener("click", () => {
     if (audio.paused) {
-      audio.play();
-      playPauseBtn.textContent = '⏸ Tạm dừng nhạc';
+      audio.play().then(() => {
+        playPauseBtn.textContent = "⏸ Tạm dừng nhạc";
+      }).catch(err => console.log("Không thể phát nhạc:", err));
     } else {
       audio.pause();
-      playPauseBtn.textContent = '🎵 Phát nhạc';
+      playPauseBtn.textContent = "🎵 Bật nhạc";
     }
   });
 }
+
 
 // ========== Bắt đầu hiệu ứng ==========
 window.onload = () => {
@@ -208,3 +212,4 @@ const observer = new MutationObserver(() => {
   }
 });
 observer.observe(document.body, { attributes: true, subtree: true });
+

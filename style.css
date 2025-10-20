@@ -395,28 +395,4 @@ button:hover { transform: translateY(-4px); background-color: #ff66a3; }
 .music-controls button:hover {
   background-color: #ff6fbf;
   transform: scale(1.05);
-
-}
-
-.music-controls {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
-}
-
-.music-controls button {
-  background-color: #ff8ecf;
-  color: white;
-  border: none;
-  padding: 10px 22px;
-  border-radius: 25px;
-  font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 6px 14px rgba(255, 136, 196, 0.3);
-  transition: transform 0.2s ease;
-}
-.music-controls button:hover {
-  transform: scale(1.08);
-  background-color: #ff66b2;
 }

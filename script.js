@@ -62,7 +62,13 @@ function showTypewriter() {
 }
 
 // ========== Popup ==========
-if (openCardBtn) openCardBtn.addEventListener('click', () => popupCard.style.display = 'flex');
+if (openCardBtn)
+  openCardBtn.addEventListener('click', () => {
+    popupCard.style.display = 'flex';
+    audio.muted = false;      // bật tiếng lại (nếu bị tắt)
+    audio.play().catch(()=>{}); // phát nhạc khi bấm "Mở thiệp"
+  });
+
 if (closeCardBtn) closeCardBtn.addEventListener('click', () => popupCard.style.display = 'none');
 
 // ========== Resize canvas ==========
@@ -208,3 +214,4 @@ const observer = new MutationObserver(() => {
   }
 });
 observer.observe(document.body, { attributes: true, subtree: true });
+
